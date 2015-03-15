@@ -1,0 +1,28 @@
+/*
+ *@name shake
+ *@className shake animated
+ *@cssCode
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes shake {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  animation-name: shake;
+}

@@ -1,0 +1,11 @@
+{
+    "name": "shake",
+    "className": "shake animated",
+    "cssCode": "@-webkit-keyframes shake {\n  0%, 100% {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0)\n  }\n  10%,\n  30%,\n  50%,\n  70%,\n  90% {\n    -webkit-transform: translate3d(-10px, 0, 0);\n    transform: translate3d(-10px, 0, 0)\n  }\n  20%,\n  40%,\n  60%,\n  80% {\n    -webkit-transform: translate3d(10px, 0, 0);\n    transform: translate3d(10px, 0, 0)\n  }\n}\n\n@keyframes shake {\n  0%, 100% {\n    -webkit-transform: translate3d(0, 0, 0);\n    -ms-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0)\n  }\n  10%,\n  30%,\n  50%,\n  70%,\n  90% {\n    -webkit-transform: translate3d(-10px, 0, 0);\n    -ms-transform: translate3d(-10px, 0, 0);\n    transform: translate3d(-10px, 0, 0)\n  }\n  20%,\n  40%,\n  60%,\n  80% {\n    -webkit-transform: translate3d(10px, 0, 0);\n    -ms-transform: translate3d(10px, 0, 0);\n    transform: translate3d(10px, 0, 0)\n  }\n}\n\n.shake {\n  -webkit-animation-name: shake;\n  animation-name: shake\n}",
+    "editionLink": "codepen.io",
+    "author": "Dan Eden",
+    "source": "Animate.css",
+    "sourceUrl": "http://daneden.github.io/animate.css/",
+    "issues": "https://github.com/daneden/animate.css/issues",
+    "license": "MIT"
+}

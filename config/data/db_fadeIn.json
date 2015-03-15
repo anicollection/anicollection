@@ -1,0 +1,11 @@
+{
+    "name": "fadeIn",
+    "className": "fadeIn animated",
+    "cssCode": "@-webkit-keyframes fadeIn {\n  0% {\n    opacity: 0\n  }\n  100% {\n    opacity: 1\n  }\n}\n\n@keyframes fadeIn {\n  0% {\n    opacity: 0\n  }\n  100% {\n    opacity: 1\n  }\n}\n\n.fadeIn {\n  -webkit-animation-name: fadeIn;\n  animation-name: fadeIn\n}",
+    "editionLink": "codepen.io",
+    "author": "Dan Eden",
+    "source": "Animate.css",
+    "sourceUrl": "http://daneden.github.io/animate.css/",
+    "issues": "https://github.com/daneden/animate.css/issues",
+    "license": "MIT"
+}

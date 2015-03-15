@@ -1,0 +1,26 @@
+/*
+ *@name fadeInUpBig
+ *@className fadeInUpBig animated
+ *@cssCode
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUpBig {
+  animation-name: fadeInUpBig;
+}

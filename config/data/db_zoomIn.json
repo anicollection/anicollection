@@ -1,0 +1,11 @@
+{
+    "name": "zoomIn",
+    "className": "zoomIn animated",
+    "cssCode": "@-webkit-keyframes zoomIn {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(.3, .3, .3);\n    transform: scale3d(.3, .3, .3)\n  }\n  50% {\n    opacity: 1\n  }\n}\n\n@keyframes zoomIn {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale3d(.3, .3, .3);\n    -ms-transform: scale3d(.3, .3, .3);\n    transform: scale3d(.3, .3, .3)\n  }\n  50% {\n    opacity: 1\n  }\n}\n\n.zoomIn {\n  -webkit-animation-name: zoomIn;\n  animation-name: zoomIn\n}",
+    "editionLink": "codepen.io",
+    "author": "Dan Eden",
+    "source": "Animate.css",
+    "sourceUrl": "http://daneden.github.io/animate.css/",
+    "issues": "https://github.com/daneden/animate.css/issues",
+    "license": "MIT"
+}

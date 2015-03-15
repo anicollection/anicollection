@@ -1,0 +1,11 @@
+{
+    "name": "zoomOut",
+    "className": "zoomOut animated",
+    "cssCode": "@-webkit-keyframes zoomOut {\n  0% {\n    opacity: 1\n  }\n  50% {\n    opacity: 0;\n    -webkit-transform: scale3d(.3, .3, .3);\n    transform: scale3d(.3, .3, .3)\n  }\n  100% {\n    opacity: 0\n  }\n}\n\n@keyframes zoomOut {\n  0% {\n    opacity: 1\n  }\n  50% {\n    opacity: 0;\n    -webkit-transform: scale3d(.3, .3, .3);\n    -ms-transform: scale3d(.3, .3, .3);\n    transform: scale3d(.3, .3, .3)\n  }\n  100% {\n    opacity: 0\n  }\n}\n\n.zoomOut {\n  -webkit-animation-name: zoomOut;\n  animation-name: zoomOut\n}",
+    "editionLink": "codepen.io",
+    "author": "Dan Eden",
+    "source": "Animate.css",
+    "sourceUrl": "http://daneden.github.io/animate.css/",
+    "issues": "https://github.com/daneden/animate.css/issues",
+    "license": "MIT"
+}

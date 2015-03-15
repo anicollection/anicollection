@@ -1,0 +1,29 @@
+/*
+ *@name zoomOut
+ *@className zoomOut animated
+ *@cssCode
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes zoomOut {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.zoomOut {
+  animation-name: zoomOut;
+}

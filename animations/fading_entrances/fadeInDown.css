@@ -1,0 +1,26 @@
+/*
+ *@name fadeInDown
+ *@className fadeInDown animated
+ *@cssCode
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}

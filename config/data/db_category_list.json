@@ -1,0 +1,294 @@
+[
+    {
+        "name": "attention_seekers",
+        "animationList": [
+            {
+                "name": "bounce"
+            },
+            {
+                "name": "flash"
+            },
+            {
+                "name": "pulse"
+            },
+            {
+                "name": "rubberBand"
+            },
+            {
+                "name": "shake"
+            },
+            {
+                "name": "swing"
+            },
+            {
+                "name": "tada"
+            },
+            {
+                "name": "wobble"
+            }
+        ]
+    },
+    {
+        "name": "bouncing_entrances",
+        "animationList": [
+            {
+                "name": "bounceIn"
+            },
+            {
+                "name": "bounceInDown"
+            },
+            {
+                "name": "bounceInLeft"
+            },
+            {
+                "name": "bounceInRight"
+            },
+            {
+                "name": "bounceInUp"
+            }
+        ]
+    },
+    {
+        "name": "bouncing_exits",
+        "animationList": [
+            {
+                "name": "bounceOut"
+            },
+            {
+                "name": "bounceOutDown"
+            },
+            {
+                "name": "bounceOutLeft"
+            },
+            {
+                "name": "bounceOutRight"
+            },
+            {
+                "name": "bounceOutUp"
+            }
+        ]
+    },
+    {
+        "name": "fading_entrances",
+        "animationList": [
+            {
+                "name": "fadeIn"
+            },
+            {
+                "name": "fadeInDown"
+            },
+            {
+                "name": "fadeInDownBig"
+            },
+            {
+                "name": "fadeInLeft"
+            },
+            {
+                "name": "fadeInLeftBig"
+            },
+            {
+                "name": "fadeInRight"
+            },
+            {
+                "name": "fadeInRightBig"
+            },
+            {
+                "name": "fadeInUp"
+            },
+            {
+                "name": "fadeInUpBig"
+            }
+        ]
+    },
+    {
+        "name": "fading_exits",
+        "animationList": [
+            {
+                "name": "fadeOut"
+            },
+            {
+                "name": "fadeOutDown"
+            },
+            {
+                "name": "fadeOutDownBig"
+            },
+            {
+                "name": "fadeOutLeft"
+            },
+            {
+                "name": "fadeOutLeftBig"
+            },
+            {
+                "name": "fadeOutRight"
+            },
+            {
+                "name": "fadeOutRightBig"
+            },
+            {
+                "name": "fadeOutUp"
+            },
+            {
+                "name": "fadeOutUpBig"
+            }
+        ]
+    },
+    {
+        "name": "flippers",
+        "animationList": [
+            {
+                "name": "flip"
+            },
+            {
+                "name": "flipInX"
+            },
+            {
+                "name": "flipInY"
+            },
+            {
+                "name": "flipOutX"
+            },
+            {
+                "name": "flipOutY"
+            }
+        ]
+    },
+    {
+        "name": "lightspeed",
+        "animationList": [
+            {
+                "name": "lightSpeedIn"
+            },
+            {
+                "name": "lightSpeedOut"
+            }
+        ]
+    },
+    {
+        "name": "rotating_entrances",
+        "animationList": [
+            {
+                "name": "rotateIn"
+            },
+            {
+                "name": "rotateInDownLeft"
+            },
+            {
+                "name": "rotateInDownRight"
+            },
+            {
+                "name": "rotateInUpLeft"
+            },
+            {
+                "name": "rotateInUpRight"
+            }
+        ]
+    },
+    {
+        "name": "rotating_exits",
+        "animationList": [
+            {
+                "name": "rotateOut"
+            },
+            {
+                "name": "rotateOutDownLeft"
+            },
+            {
+                "name": "rotateOutDownRight"
+            },
+            {
+                "name": "rotateOutUpLeft"
+            },
+            {
+                "name": "rotateOutUpRight"
+            }
+        ]
+    },
+    {
+        "name": "specials",
+        "animationList": [
+            {
+                "name": "hinge"
+            },
+            {
+                "name": "rollIn"
+            },
+            {
+                "name": "rollOut"
+            }
+        ]
+    },
+    {
+        "name": "zooming_entrances",
+        "animationList": [
+            {
+                "name": "zoomIn"
+            },
+            {
+                "name": "zoomInDown"
+            },
+            {
+                "name": "zoomInLeft"
+            },
+            {
+                "name": "zoomInRight"
+            },
+            {
+                "name": "zoomInUp"
+            }
+        ]
+    },
+    {
+        "name": "zooming_exits",
+        "animationList": [
+            {
+                "name": "zoomOut"
+            },
+            {
+                "name": "zoomOutDown"
+            },
+            {
+                "name": "zoomOutLeft"
+            },
+            {
+                "name": "zoomOutRight"
+            },
+            {
+                "name": "zoomOutUp"
+            }
+        ]
+    },
+    {
+        "name": "sliding_entrances",
+        "animationList": [
+            {
+                "name": "slideInDown"
+            },
+            {
+                "name": "slideInLeft"
+            },
+            {
+                "name": "slideInRight"
+            },
+            {
+                "name": "slideInUp"
+            }
+        ]
+    },
+    {
+        "name": "sliding_exits",
+        "animationList": [
+            {
+                "name": "slideOutDown"
+            },
+            {
+                "name": "slideOutLeft"
+            },
+            {
+                "name": "slideOutRight"
+            },
+            {
+                "name": "slideOutUp"
+            }
+        ]
+    }
+]

@@ -1,0 +1,25 @@
+/*
+ *@name slideInRight
+ *@className slideInRight animated
+ *@cssCode
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+}

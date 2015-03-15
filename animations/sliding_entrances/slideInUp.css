@@ -1,0 +1,25 @@
+/*
+ *@name slideInUp
+ *@className slideInUp animated
+ *@cssCode
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+}

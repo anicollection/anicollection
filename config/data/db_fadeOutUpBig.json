@@ -1,0 +1,11 @@
+{
+    "name": "fadeOutUpBig",
+    "className": "fadeOutUpBig animated",
+    "cssCode": "@-webkit-keyframes fadeOutUpBig {\n  0% {\n    opacity: 1\n  }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0)\n  }\n}\n\n@keyframes fadeOutUpBig {\n  0% {\n    opacity: 1\n  }\n  100% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n    -ms-transform: translate3d(0, -2000px, 0);\n    transform: translate3d(0, -2000px, 0)\n  }\n}\n\n.fadeOutUpBig {\n  -webkit-animation-name: fadeOutUpBig;\n  animation-name: fadeOutUpBig\n}",
+    "editionLink": "codepen.io",
+    "author": "Dan Eden",
+    "source": "Animate.css",
+    "sourceUrl": "http://daneden.github.io/animate.css/",
+    "issues": "https://github.com/daneden/animate.css/issues",
+    "license": "MIT"
+}

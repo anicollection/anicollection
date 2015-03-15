@@ -1,0 +1,27 @@
+/*
+ *@name rotateOutUpRight
+ *@className rotateOutUpRight animated
+ *@cssCode
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes rotateOutUpRight {
+  0% {
+    transform-origin: right bottom;
+    opacity: 1;
+  }
+
+  100% {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, 90deg);
+    opacity: 0;
+  }
+}
+
+.rotateOutUpRight {
+  animation-name: rotateOutUpRight;
+}

@@ -1,0 +1,11 @@
+{
+    "name": "slideInRight",
+    "className": "slideInRight animated",
+    "cssCode": "@-webkit-keyframes slideInRight {\n  0% {\n    -webkit-transform: translateX(100%);\n    transform: translateX(100%);\n    visibility: visible\n  }\n  100% {\n    -webkit-transform: translateX(0);\n    transform: translateX(0)\n  }\n}\n\n@keyframes slideInRight {\n  0% {\n    -webkit-transform: translateX(100%);\n    -ms-transform: translateX(100%);\n    transform: translateX(100%);\n    visibility: visible\n  }\n  100% {\n    -webkit-transform: translateX(0);\n    -ms-transform: translateX(0);\n    transform: translateX(0)\n  }\n}\n\n.slideInRight {\n  -webkit-animation-name: slideInRight;\n  animation-name: slideInRight\n}",
+    "editionLink": "codepen.io",
+    "author": "Dan Eden",
+    "source": "Animate.css",
+    "sourceUrl": "http://daneden.github.io/animate.css/",
+    "issues": "https://github.com/daneden/animate.css/issues",
+    "license": "MIT"
+}

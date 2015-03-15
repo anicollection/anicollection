@@ -1,0 +1,31 @@
+/*
+ *@name bounceOut
+ *@className bounceOut animated
+ *@cssCode
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes bounceOut {
+  20% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  50%, 55% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+}
+
+.bounceOut {
+  animation-name: bounceOut;
+  animation-duration: .75s;
+}

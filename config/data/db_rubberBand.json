@@ -1,0 +1,11 @@
+{
+    "name": "rubberBand",
+    "className": "rubberBand animated",
+    "cssCode": "@-webkit-keyframes rubberBand {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1)\n  }\n  30% {\n    -webkit-transform: scale3d(1.25, .75, 1);\n    transform: scale3d(1.25, .75, 1)\n  }\n  40% {\n    -webkit-transform: scale3d(0.75, 1.25, 1);\n    transform: scale3d(0.75, 1.25, 1)\n  }\n  50% {\n    -webkit-transform: scale3d(1.15, .85, 1);\n    transform: scale3d(1.15, .85, 1)\n  }\n  65% {\n    -webkit-transform: scale3d(.95, 1.05, 1);\n    transform: scale3d(.95, 1.05, 1)\n  }\n  75% {\n    -webkit-transform: scale3d(1.05, .95, 1);\n    transform: scale3d(1.05, .95, 1)\n  }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1)\n  }\n}\n\n@keyframes rubberBand {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n    -ms-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1)\n  }\n  30% {\n    -webkit-transform: scale3d(1.25, .75, 1);\n    -ms-transform: scale3d(1.25, .75, 1);\n    transform: scale3d(1.25, .75, 1)\n  }\n  40% {\n    -webkit-transform: scale3d(0.75, 1.25, 1);\n    -ms-transform: scale3d(0.75, 1.25, 1);\n    transform: scale3d(0.75, 1.25, 1)\n  }\n  50% {\n    -webkit-transform: scale3d(1.15, .85, 1);\n    -ms-transform: scale3d(1.15, .85, 1);\n    transform: scale3d(1.15, .85, 1)\n  }\n  65% {\n    -webkit-transform: scale3d(.95, 1.05, 1);\n    -ms-transform: scale3d(.95, 1.05, 1);\n    transform: scale3d(.95, 1.05, 1)\n  }\n  75% {\n    -webkit-transform: scale3d(1.05, .95, 1);\n    -ms-transform: scale3d(1.05, .95, 1);\n    transform: scale3d(1.05, .95, 1)\n  }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n    -ms-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1)\n  }\n}\n\n.rubberBand {\n  -webkit-animation-name: rubberBand;\n  animation-name: rubberBand\n}",
+    "editionLink": "codepen.io",
+    "author": "Dan Eden",
+    "source": "Animate.css",
+    "sourceUrl": "http://daneden.github.io/animate.css/",
+    "issues": "https://github.com/daneden/animate.css/issues",
+    "license": "MIT"
+}

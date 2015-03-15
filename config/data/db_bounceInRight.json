@@ -1,0 +1,11 @@
+{
+    "name": "bounceInRight",
+    "className": "bounceInRight animated",
+    "cssCode": "@-webkit-keyframes bounceInRight {\n  0%, 100%, 60%, 75%, 90% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);\n    transition-timing-function: cubic-bezier(0.215, .61, .355, 1)\n  }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(3000px, 0, 0);\n    transform: translate3d(3000px, 0, 0)\n  }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(-25px, 0, 0);\n    transform: translate3d(-25px, 0, 0)\n  }\n  75% {\n    -webkit-transform: translate3d(10px, 0, 0);\n    transform: translate3d(10px, 0, 0)\n  }\n  90% {\n    -webkit-transform: translate3d(-5px, 0, 0);\n    transform: translate3d(-5px, 0, 0)\n  }\n  100% {\n    -webkit-transform: none;\n    transform: none\n  }\n}\n\n@keyframes bounceInRight {\n  0%, 100%, 60%, 75%, 90% {\n    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);\n    transition-timing-function: cubic-bezier(0.215, .61, .355, 1)\n  }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(3000px, 0, 0);\n    -ms-transform: translate3d(3000px, 0, 0);\n    transform: translate3d(3000px, 0, 0)\n  }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(-25px, 0, 0);\n    -ms-transform: translate3d(-25px, 0, 0);\n    transform: translate3d(-25px, 0, 0)\n  }\n  75% {\n    -webkit-transform: translate3d(10px, 0, 0);\n    -ms-transform: translate3d(10px, 0, 0);\n    transform: translate3d(10px, 0, 0)\n  }\n  90% {\n    -webkit-transform: translate3d(-5px, 0, 0);\n    -ms-transform: translate3d(-5px, 0, 0);\n    transform: translate3d(-5px, 0, 0)\n  }\n  100% {\n    -webkit-transform: none;\n    -ms-transform: none;\n    transform: none\n  }\n}\n\n.bounceInRight {\n  -webkit-animation-name: bounceInRight;\n  animation-name: bounceInRight\n}",
+    "editionLink": "codepen.io",
+    "author": "Dan Eden",
+    "source": "Animate.css",
+    "sourceUrl": "http://daneden.github.io/animate.css/",
+    "issues": "https://github.com/daneden/animate.css/issues",
+    "license": "MIT"
+}

@@ -1,0 +1,27 @@
+/*
+ *@name rotateOutDownLeft
+ *@className rotateOutDownLeft animated
+ *@cssCode
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes rotateOutDownLeft {
+  0% {
+    transform-origin: left bottom;
+    opacity: 1;
+  }
+
+  100% {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+}
+
+.rotateOutDownLeft {
+  animation-name: rotateOutDownLeft;
+}
