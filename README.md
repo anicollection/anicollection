@@ -20,8 +20,6 @@ AniCollection is great for that.
 
 AniCollection is great for that.
 
-https://anicollection.tilt.com/admin/donation_campaigns/new
-
 ## Support / Feedback
 
 Having trouble? Find a bug? Need any sort of question answered? Ask it [here](https://github.com/anicollection/anicollection/issues) and we'll get back to you as soon as we can.
@@ -69,15 +67,10 @@ We hate the contact forms :(
 
 You can find us on [Twitter](https://twitter.com/dariel_noel), [Blog](http://darielnoel.github.io/), or simply by [email](mailto:darielnoel@gmail.com).
 
-## License
-
-Anicollection is licensed under the MIT license. (http://opensource.org/licenses/MIT)
-
 ## Libraries
 
 - [Glide](https://github.com/nickpettit/glide)
 - [Animate.css](http://daneden.github.io/animate.css/)
-
 
 ## People
 
@@ -85,4 +78,7 @@ Anicollection is licensed under the MIT license. (http://opensource.org/licenses
 - [Nick Pettit](http://nickpettit.com/)
 - You :)
 
+## License
+
+Anicollection is licensed under the MIT license. (http://opensource.org/licenses/MIT)
 
