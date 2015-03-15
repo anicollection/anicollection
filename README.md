@@ -57,7 +57,7 @@ Pull requests are the way to go here. We apologise in advance for the slow actio
 
 Check the AniCollection [browser compatibility table](https://github.com/anicollection/anicollection/wiki/Browser-Compatibility)
 
-#### What are the licenses of the animations**
+#### What are the licenses of the animations?
 
 AniCollection respects third party’s copyrights, you migth pay attention to the animations license notification.
 
