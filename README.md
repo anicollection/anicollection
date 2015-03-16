@@ -1,12 +1,12 @@
 # AniCollection
 
-The easiest way to find, use and share animations.
+The easiest way to find, use and share CSS3 animations.
 
 Happy animating!!! [AniCollection](http://anicollection.github.io).
 
 ## About
 
-AniCollection is a collection of awesome animations from many [libraries](https://github.com/anicollection/anicollection#libraries) and many [people](https://github.com/anicollection/anicollection#people). To give you an easy way to find, use and share it.
+AniCollection is a collection of awesome CSS3 animations from many [libraries](https://github.com/anicollection/anicollection#libraries) and many [people](https://github.com/anicollection/anicollection#people). To give you an easy way to find, use and share it.
 
 **Need to find cool animations to improve your Website?**
 
