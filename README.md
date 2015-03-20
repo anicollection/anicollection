@@ -30,7 +30,7 @@ Ask it [here](https://github.com/anicollection/anicollection/issues).
 
 Screenshots and screencasts go a long way in helping us troubleshoot.
 
-## Submitions
+## Submissions
 
 Pull requests are the way to go here. We apologise in advance for the slow action on [pull requests](https://github.com/anicollection/anicollection/pulls). We only have four rules for submitting a [pull request](https://github.com/anicollection/anicollection/pulls).
 
