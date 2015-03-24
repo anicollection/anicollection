@@ -1,0 +1,26 @@
+/*
+ *@name rotateUpRight
+ *@className rotateUpRight animated
+ *@cssCode
+ *@editionLink codepen.io
+ *@author Quinn Keaveney
+ *@source AniCollection
+ *@sourceUrl https://github.com/anicollection/anicollection
+ *@issues https://github.com/anicollection/anicollection/issues
+ *@license MIT
+ */
+@keyframes rotateUpRight {
+  0% {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, -90deg);
+  }
+
+  100% {
+    transform-origin: right bottom;
+    transform: none;
+  }
+}
+
+.rotateUpRight {
+  animation-name: rotateUpRight;
+}

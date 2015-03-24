@@ -1,0 +1,26 @@
+/*
+ *@name rotate
+ *@className rotate animated
+ *@cssCode
+ *@editionLink codepen.io
+ *@author Quinn Keaveney
+ *@source AniCollection
+ *@sourceUrl https://github.com/anicollection/anicollection/
+ *@issues https://github.com/anicollection/anicollection/issues
+ *@license MIT
+ */
+@keyframes rotate {
+  0% {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -200deg);
+  }
+
+  100% {
+    transform-origin: center;
+    transform: none;
+  }
+}
+
+.rotate {
+  animation-name: rotate;
+}
