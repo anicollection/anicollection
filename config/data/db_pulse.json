@@ -4,7 +4,7 @@
     "cssCode": "@-webkit-keyframes pulse {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1)\n  }\n  50% {\n    -webkit-transform: scale3d(1.05, 1.05, 1.05);\n    transform: scale3d(1.05, 1.05, 1.05)\n  }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1)\n  }\n}\n\n@keyframes pulse {\n  0% {\n    -webkit-transform: scale3d(1, 1, 1);\n    -ms-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1)\n  }\n  50% {\n    -webkit-transform: scale3d(1.05, 1.05, 1.05);\n    -ms-transform: scale3d(1.05, 1.05, 1.05);\n    transform: scale3d(1.05, 1.05, 1.05)\n  }\n  100% {\n    -webkit-transform: scale3d(1, 1, 1);\n    -ms-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1)\n  }\n}\n\n.pulse {\n  -webkit-animation-name: pulse;\n  animation-name: pulse\n}",
     "editionLink": "codepen.io",
     "author": "Nick Pettit",
-    "source": "Animate.css",
+    "source": "Glide",
     "sourceUrl": "https://github.com/nickpettit/glide",
     "issues": "https://github.com/daneden/animate.css/issues",
     "license": "MIT"
