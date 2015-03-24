@@ -1,0 +1,26 @@
+/*
+ *@name rotateDownLeft
+ *@className rotateDownLeft animated
+ *@cssCode
+ *@editionLink codepen.io
+ *@author Quinn Keaveney
+ *@source AniCollection
+ *@sourceUrl https://github.com/anicollection/anicollection
+ *@issues https://github.com/anicollection/anicollection/issues
+ *@license MIT
+ */
+@keyframes rotateDownLeft {
+  0% {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, -45deg);
+  }
+
+  100% {
+    transform-origin: left bottom;
+    transform: none;
+  }
+}
+
+.rotateDownLeft {
+  animation-name: rotateDownLeft;
+}
