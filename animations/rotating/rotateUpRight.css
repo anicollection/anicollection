@@ -9,7 +9,7 @@
  *@issues https://github.com/daneden/animate.css/issues
  *@license MIT
  */
-@keyframes rotateInUpRight {
+@keyframes rotateUpRight {
   0% {
     transform-origin: right bottom;
     transform: rotate3d(0, 0, 1, -90deg);
@@ -21,6 +21,6 @@
   }
 }
 
-.rotateInUpRight {
-  animation-name: rotateInUpRight;
+.rotateUpRight {
+  animation-name: rotateUpRight;
 }

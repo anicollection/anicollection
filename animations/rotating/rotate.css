@@ -9,7 +9,7 @@
  *@issues https://github.com/daneden/animate.css/issues
  *@license MIT
  */
-@keyframes rotateIn {
+@keyframes rotate {
   0% {
     transform-origin: center;
     transform: rotate3d(0, 0, 1, -200deg);
@@ -21,6 +21,6 @@
   }
 }
 
-.rotateIn {
-  animation-name: rotateIn;
+.rotate {
+  animation-name: rotate;
 }
