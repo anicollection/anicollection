@@ -7,5 +7,6 @@
     "source": "Animate.css",
     "sourceUrl": "http://daneden.github.io/animate.css/",
     "issues": "https://github.com/daneden/animate.css/issues",
-    "license": "MIT"
+    "license": "MIT",
+    "plainCssCode": "@keyframes zoomInUp {\n  0% {\n    opacity: 0;\n    transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);\n    animation-timing-function: cubic-bezier(0.55, .055, .675, .19)\n  }\n  60% {\n    opacity: 1;\n    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);\n    animation-timing-function: cubic-bezier(0.175, .885, .32, 1)\n  }\n}\n\n.zoomInUp {\n  animation-name: zoomInUp\n}"
 }

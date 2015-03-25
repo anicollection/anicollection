@@ -1,0 +1,12 @@
+{
+    "name": "rotateUpLeft",
+    "className": "rotateUpLeft animated",
+    "cssCode": "@-webkit-keyframes rotateUpLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg)\n  }\n  100% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: none;\n    transform: none\n  }\n}\n\n@keyframes rotateUpLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    -ms-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, 45deg);\n    -ms-transform: rotate3d(0, 0, 1, 45deg);\n    transform: rotate3d(0, 0, 1, 45deg)\n  }\n  100% {\n    -webkit-transform-origin: left bottom;\n    -ms-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: none;\n    -ms-transform: none;\n    transform: none\n  }\n}\n\n.rotateUpLeft {\n  -webkit-animation-name: rotateUpLeft;\n  animation-name: rotateUpLeft\n}",
+    "editionLink": "codepen.io",
+    "author": "Quinn Keaveney",
+    "source": "AniCollection",
+    "sourceUrl": "https://github.com/anicollection/anicollection",
+    "issues": "https://github.com/anicollection/anicollection/issues",
+    "license": "MIT",
+    "plainCssCode": "@keyframes rotateUpLeft {\n  0% {\n    transform-origin: left bottom;\n    transform: rotate3d(0, 0, 1, 45deg)\n  }\n  100% {\n    transform-origin: left bottom;\n    transform: none\n  }\n}\n\n.rotateUpLeft {\n  animation-name: rotateUpLeft\n}"
+}

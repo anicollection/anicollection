@@ -11,13 +11,11 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-cssmin": "~0.8.0",
-    "load-grunt-tasks": "~0.2.0"
+    "load-grunt-tasks": "~0.2.0",
+    "css-annotation": "^0.4.0",
+    "js-beautify": "^1.5.5"
   },
   "spm": {
     "main": "dist/anicollection.css"
-  },
-  "dependencies": {
-    "css-annotation": "^0.4.0",
-    "js-beautify": "^1.5.5"
   }
 }

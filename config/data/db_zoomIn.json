@@ -7,5 +7,6 @@
     "source": "Animate.css",
     "sourceUrl": "http://daneden.github.io/animate.css/",
     "issues": "https://github.com/daneden/animate.css/issues",
-    "license": "MIT"
+    "license": "MIT",
+    "plainCssCode": "@keyframes zoomIn {\n  0% {\n    opacity: 0;\n    transform: scale3d(.3, .3, .3)\n  }\n  50% {\n    opacity: 1\n  }\n}\n\n.zoomIn {\n  animation-name: zoomIn\n}"
 }

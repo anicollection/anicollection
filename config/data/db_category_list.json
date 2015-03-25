@@ -164,6 +164,26 @@
         ]
     },
     {
+        "name": "rotating",
+        "animationList": [
+            {
+                "name": "rotate"
+            },
+            {
+                "name": "rotateDownLeft"
+            },
+            {
+                "name": "rotateDownRight"
+            },
+            {
+                "name": "rotateUpLeft"
+            },
+            {
+                "name": "rotateUpRight"
+            }
+        ]
+    },
+    {
         "name": "rotating_entrances",
         "animationList": [
             {

@@ -7,5 +7,6 @@
     "source": "Animate.css",
     "sourceUrl": "http://daneden.github.io/animate.css/",
     "issues": "https://github.com/daneden/animate.css/issues",
-    "license": "MIT"
+    "license": "MIT",
+    "plainCssCode": "@keyframes rotateOutUpRight {\n  0% {\n    transform-origin: right bottom;\n    opacity: 1\n  }\n  100% {\n    transform-origin: right bottom;\n    transform: rotate3d(0, 0, 1, 90deg);\n    opacity: 0\n  }\n}\n\n.rotateOutUpRight {\n  animation-name: rotateOutUpRight\n}"
 }

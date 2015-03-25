@@ -1,0 +1,12 @@
+{
+    "name": "rotate",
+    "className": "rotate animated",
+    "cssCode": "@-webkit-keyframes rotate {\n  0% {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: rotate3d(0, 0, 1, -200deg);\n    transform: rotate3d(0, 0, 1, -200deg)\n  }\n  100% {\n    -webkit-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: none;\n    transform: none\n  }\n}\n\n@keyframes rotate {\n  0% {\n    -webkit-transform-origin: center;\n    -ms-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: rotate3d(0, 0, 1, -200deg);\n    -ms-transform: rotate3d(0, 0, 1, -200deg);\n    transform: rotate3d(0, 0, 1, -200deg)\n  }\n  100% {\n    -webkit-transform-origin: center;\n    -ms-transform-origin: center;\n    transform-origin: center;\n    -webkit-transform: none;\n    -ms-transform: none;\n    transform: none\n  }\n}\n\n.rotate {\n  -webkit-animation-name: rotate;\n  animation-name: rotate\n}",
+    "editionLink": "codepen.io",
+    "author": "Quinn Keaveney",
+    "source": "AniCollection",
+    "sourceUrl": "https://github.com/anicollection/anicollection/",
+    "issues": "https://github.com/anicollection/anicollection/issues",
+    "license": "MIT",
+    "plainCssCode": "@keyframes rotate {\n  0% {\n    transform-origin: center;\n    transform: rotate3d(0, 0, 1, -200deg)\n  }\n  100% {\n    transform-origin: center;\n    transform: none\n  }\n}\n\n.rotate {\n  animation-name: rotate\n}"
+}

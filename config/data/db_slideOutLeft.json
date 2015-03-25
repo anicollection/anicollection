@@ -7,5 +7,6 @@
     "source": "Animate.css",
     "sourceUrl": "http://daneden.github.io/animate.css/",
     "issues": "https://github.com/daneden/animate.css/issues",
-    "license": "MIT"
+    "license": "MIT",
+    "plainCssCode": "@keyframes slideOutLeft {\n  0% {\n    transform: translateX(0)\n  }\n  100% {\n    visibility: hidden;\n    transform: translateX(-100%)\n  }\n}\n\n.slideOutLeft {\n  animation-name: slideOutLeft\n}"
 }

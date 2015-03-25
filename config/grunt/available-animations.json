@@ -64,6 +64,14 @@
     "lightSpeedOut": true
   },
 
+  "rotating":{
+    "rotate": true,
+    "rotateDownLeft": true,
+    "rotateDownRight": true,
+    "rotateUpLeft": true,
+    "rotateUpRight": true
+  },
+
   "rotating_entrances": {
     "rotateIn": true,
     "rotateInDownLeft": true,

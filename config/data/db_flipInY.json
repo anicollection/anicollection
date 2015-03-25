@@ -7,5 +7,6 @@
     "source": "Animate.css",
     "sourceUrl": "http://daneden.github.io/animate.css/",
     "issues": "https://github.com/daneden/animate.css/issues",
-    "license": "MIT"
+    "license": "MIT",
+    "plainCssCode": "@keyframes flipInY {\n  0% {\n    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    transition-timing-function: ease-in;\n    opacity: 0\n  }\n  40% {\n    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);\n    transition-timing-function: ease-in\n  }\n  60% {\n    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);\n    opacity: 1\n  }\n  80% {\n    transform: perspective(400px) rotate3d(0, 1, 0, -5deg)\n  }\n  100% {\n    transform: perspective(400px)\n  }\n}\n\n.flipInY {\n  backface-visibility: visible!important;\n  animation-name: flipInY\n}"
 }

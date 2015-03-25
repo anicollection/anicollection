@@ -7,5 +7,6 @@
     "source": "Animate.css",
     "sourceUrl": "http://daneden.github.io/animate.css/",
     "issues": "https://github.com/daneden/animate.css/issues",
-    "license": "MIT"
+    "license": "MIT",
+    "plainCssCode": "@keyframes bounceOutLeft {\n  20% {\n    opacity: 1;\n    transform: translate3d(20px, 0, 0)\n  }\n  100% {\n    opacity: 0;\n    transform: translate3d(-2000px, 0, 0)\n  }\n}\n\n.bounceOutLeft {\n  animation-name: bounceOutLeft\n}"
 }

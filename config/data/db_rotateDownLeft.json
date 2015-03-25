@@ -1,0 +1,12 @@
+{
+    "name": "rotateDownLeft",
+    "className": "rotateDownLeft animated",
+    "cssCode": "@-webkit-keyframes rotateDownLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg)\n  }\n  100% {\n    -webkit-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: none;\n    transform: none\n  }\n}\n\n@keyframes rotateDownLeft {\n  0% {\n    -webkit-transform-origin: left bottom;\n    -ms-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: rotate3d(0, 0, 1, -45deg);\n    -ms-transform: rotate3d(0, 0, 1, -45deg);\n    transform: rotate3d(0, 0, 1, -45deg)\n  }\n  100% {\n    -webkit-transform-origin: left bottom;\n    -ms-transform-origin: left bottom;\n    transform-origin: left bottom;\n    -webkit-transform: none;\n    -ms-transform: none;\n    transform: none\n  }\n}\n\n.rotateDownLeft {\n  -webkit-animation-name: rotateDownLeft;\n  animation-name: rotateDownLeft\n}",
+    "editionLink": "codepen.io",
+    "author": "Quinn Keaveney",
+    "source": "AniCollection",
+    "sourceUrl": "https://github.com/anicollection/anicollection",
+    "issues": "https://github.com/anicollection/anicollection/issues",
+    "license": "MIT",
+    "plainCssCode": "@keyframes rotateDownLeft {\n  0% {\n    transform-origin: left bottom;\n    transform: rotate3d(0, 0, 1, -45deg)\n  }\n  100% {\n    transform-origin: left bottom;\n    transform: none\n  }\n}\n\n.rotateDownLeft {\n  animation-name: rotateDownLeft\n}"
+}

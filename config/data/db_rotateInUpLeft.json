@@ -7,5 +7,6 @@
     "source": "Animate.css",
     "sourceUrl": "http://daneden.github.io/animate.css/",
     "issues": "https://github.com/daneden/animate.css/issues",
-    "license": "MIT"
+    "license": "MIT",
+    "plainCssCode": "@keyframes rotateInUpLeft {\n  0% {\n    transform-origin: left bottom;\n    transform: rotate3d(0, 0, 1, 45deg);\n    opacity: 0\n  }\n  100% {\n    transform-origin: left bottom;\n    transform: none;\n    opacity: 1\n  }\n}\n\n.rotateInUpLeft {\n  animation-name: rotateInUpLeft\n}"
 }

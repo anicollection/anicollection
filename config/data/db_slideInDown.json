@@ -7,5 +7,6 @@
     "source": "Animate.css",
     "sourceUrl": "http://daneden.github.io/animate.css/",
     "issues": "https://github.com/daneden/animate.css/issues",
-    "license": "MIT"
+    "license": "MIT",
+    "plainCssCode": "@keyframes slideInDown {\n  0% {\n    transform: translateY(-100%);\n    visibility: visible\n  }\n  100% {\n    transform: translateY(0)\n  }\n}\n\n.slideInDown {\n  animation-name: slideInDown\n}"
 }

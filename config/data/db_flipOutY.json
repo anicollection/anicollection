@@ -7,5 +7,6 @@
     "source": "Animate.css",
     "sourceUrl": "http://daneden.github.io/animate.css/",
     "issues": "https://github.com/daneden/animate.css/issues",
-    "license": "MIT"
+    "license": "MIT",
+    "plainCssCode": "@keyframes flipOutY {\n  0% {\n    transform: perspective(400px)\n  }\n  30% {\n    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);\n    opacity: 1\n  }\n  100% {\n    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n    opacity: 0\n  }\n}\n\n.flipOutY {\n  backface-visibility: visible!important;\n  animation-name: flipOutY;\n  animation-duration: .75s\n}"
 }

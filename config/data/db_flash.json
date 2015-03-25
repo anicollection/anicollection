@@ -7,5 +7,6 @@
     "source": "Animate.css",
     "sourceUrl": "http://daneden.github.io/animate.css/",
     "issues": "https://github.com/daneden/animate.css/issues",
-    "license": "MIT"
+    "license": "MIT",
+    "plainCssCode": "@keyframes flash {\n  0%, 100%, 50% {\n    opacity: 1\n  }\n  25%,\n  75% {\n    opacity: 0\n  }\n}\n\n.flash {\n  animation-name: flash\n}"
 }

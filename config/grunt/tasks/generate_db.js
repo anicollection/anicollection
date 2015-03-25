@@ -12,7 +12,8 @@ var annotation = require('css-annotation'),
 module.exports = function (grunt) {
   var config = {
     dest: 'config/data/',
-    src: 'prefixed_source/animations/'
+    src: 'prefixed_source/animations/',
+    unprefixedSrc: 'animations/'
   };
 
   /**
@@ -94,12 +95,15 @@ module.exports = function (grunt) {
   function createAnimationObject(categoryName, fileName){
     var animation,
         inputFilepath = config.src + categoryName + '/' + fileName + '.css',
+        inputPlainFilepath = config.unprefixedSrc + categoryName + '/' + fileName + '.css',
         outpuFilepath = config.dest + 'db_'+ fileName + '.json',
         currentFileSource,
+        currentFilePlainSource,
         metadataObject;
 
     // read the file
     currentFileSource = grunt.file.read(inputFilepath);
+    currentFilePlainSource = grunt.file.read(inputPlainFilepath);
 
     // extract relevant data
     animation = parseString(currentFileSource);
@@ -112,7 +116,14 @@ module.exports = function (grunt) {
         aggressiveMerging:false,
         keepBreaks:true
       }).minify(currentFileSource);
+
+      animation.plainCssCode = new CleanCSS({
+        noAdvanced:false,
+        aggressiveMerging:false,
+        keepBreaks:true
+      }).minify(currentFilePlainSource);
       animation.cssCode = beautify_css(animation.cssCode, { indent_size: 2 });
+      animation.plainCssCode = beautify_css(animation.plainCssCode, { indent_size: 2 });
     }
 
     // write destiny

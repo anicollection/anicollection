@@ -7,5 +7,6 @@
     "source": "Glide",
     "sourceUrl": "https://github.com/nickpettit/glide",
     "issues": "https://github.com/daneden/animate.css/issues",
-    "license": "MIT"
+    "license": "MIT",
+    "plainCssCode": "@keyframes wobble {\n  0% {\n    transform: none\n  }\n  15% {\n    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)\n  }\n  30% {\n    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)\n  }\n  45% {\n    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)\n  }\n  60% {\n    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)\n  }\n  75% {\n    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)\n  }\n  100% {\n    transform: none\n  }\n}\n\n.wobble {\n  animation-name: wobble\n}"
 }

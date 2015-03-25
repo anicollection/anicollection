@@ -57,6 +57,15 @@ module.exports = function(grunt) {
                 '**/*',
               ],
               dest: '../dev.anicollection.io/build/config/data/'
+            },
+            // includes files within path
+            {
+              expand: true,
+              cwd: 'dist/',
+              src: [
+                '**/*',
+              ],
+              dest: '../dev.anicollection.io/build/public/lib/anicollection/'
             }
           ]
       }
@@ -106,6 +115,6 @@ module.exports = function(grunt) {
   grunt.registerTask('dev', ['watch']);
 
   // allow you to generate the animation db for anicollection
-  grunt.registerTask('generate', ['autoprefixer', 'generate-db', 'clean', 'copy']);
+  grunt.registerTask('generate', ['default','autoprefixer', 'generate-db', 'clean', 'copy']);
 
 };

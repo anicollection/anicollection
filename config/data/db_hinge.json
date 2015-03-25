@@ -7,5 +7,6 @@
     "source": "Animate.css",
     "sourceUrl": "http://daneden.github.io/animate.css/",
     "issues": "https://github.com/daneden/animate.css/issues",
-    "license": "MIT"
+    "license": "MIT",
+    "plainCssCode": "@keyframes hinge {\n  0% {\n    transform-origin: top left;\n    animation-timing-function: ease-in-out\n  }\n  20%,\n  60% {\n    transform: rotate3d(0, 0, 1, 80deg);\n    transform-origin: top left;\n    animation-timing-function: ease-in-out\n  }\n  40%,\n  80% {\n    transform: rotate3d(0, 0, 1, 60deg);\n    transform-origin: top left;\n    animation-timing-function: ease-in-out;\n    opacity: 1\n  }\n  100% {\n    transform: translate3d(0, 700px, 0);\n    opacity: 0\n  }\n}\n\n.hinge {\n  animation-name: hinge\n}"
 }
