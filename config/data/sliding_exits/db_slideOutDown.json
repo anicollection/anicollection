@@ -1,0 +1,12 @@
+{
+    "name": "slideOutDown",
+    "className": "slideOutDown animated",
+    "cssCode": "@-webkit-keyframes slideOutDown {\n  0% {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0)\n  }\n  100% {\n    visibility: hidden;\n    -webkit-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0)\n  }\n}\n\n@keyframes slideOutDown {\n  0% {\n    -webkit-transform: translate3d(0, 0, 0);\n    -ms-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0)\n  }\n  100% {\n    visibility: hidden;\n    -webkit-transform: translate3d(0, 100%, 0);\n    -ms-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0)\n  }\n}\n\n.slideOutDown {\n  -webkit-animation-name: slideOutDown;\n  animation-name: slideOutDown\n}",
+    "editionLink": "codepen.io",
+    "author": "Dan Eden",
+    "source": "Animate.css",
+    "sourceUrl": "http://daneden.github.io/animate.css/",
+    "issues": "https://github.com/daneden/animate.css/issues",
+    "license": "MIT",
+    "plainCssCode": "@keyframes slideOutDown {\n  0% {\n    transform: translate3d(0, 0, 0)\n  }\n  100% {\n    visibility: hidden;\n    transform: translate3d(0, 100%, 0)\n  }\n}\n\n.slideOutDown {\n  animation-name: slideOutDown\n}"
+}

@@ -1,7 +1,7 @@
 /*
  *@name rotateInUpRight
  *@className rotateInUpRight animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -13,16 +13,15 @@
   0% {
     transform-origin: right bottom;
     transform: rotate3d(0, 0, 1, -90deg);
-    opacity: 0;
+    opacity: 0
   }
-
   100% {
     transform-origin: right bottom;
     transform: none;
-    opacity: 1;
+    opacity: 1
   }
 }
 
 .rotateInUpRight {
-  animation-name: rotateInUpRight;
+  animation-name: rotateInUpRight
 }

@@ -1,7 +1,7 @@
 /*
  *@name bounceOutUp
  *@className bounceOutUp animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -11,20 +11,19 @@
  */
 @keyframes bounceOutUp {
   20% {
-    transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0)
   }
-
-  40%, 45% {
+  40%,
+  45% {
     opacity: 1;
-    transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0)
   }
-
   100% {
     opacity: 0;
-    transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0)
   }
 }
 
 .bounceOutUp {
-  animation-name: bounceOutUp;
+  animation-name: bounceOutUp
 }

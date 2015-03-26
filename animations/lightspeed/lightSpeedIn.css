@@ -1,7 +1,7 @@
 /*
  *@name lightSpeedIn
  *@className lightSpeedIn animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -12,26 +12,23 @@
 @keyframes lightSpeedIn {
   0% {
     transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
+    opacity: 0
   }
-
   60% {
     transform: skewX(20deg);
-    opacity: 1;
+    opacity: 1
   }
-
   80% {
     transform: skewX(-5deg);
-    opacity: 1;
+    opacity: 1
   }
-
   100% {
     transform: none;
-    opacity: 1;
+    opacity: 1
   }
 }
 
 .lightSpeedIn {
   animation-name: lightSpeedIn;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-out
 }

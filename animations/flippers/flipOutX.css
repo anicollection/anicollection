@@ -1,7 +1,7 @@
 /*
  *@name flipOutX
  *@className flipOutX animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -11,22 +11,19 @@
  */
 @keyframes flipOutX {
   0% {
-    transform: perspective(400px);
+    transform: perspective(400px)
   }
-
   30% {
     transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    opacity: 1;
+    opacity: 1
   }
-
   100% {
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    opacity: 0;
+    opacity: 0
   }
 }
 
 .flipOutX {
   animation-name: flipOutX;
-  animation-duration: .75s;
-  backface-visibility: visible !important;
+  backface-visibility: visible!important
 }

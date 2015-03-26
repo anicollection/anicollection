@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
 /*!
+AniCollection - http://anicollection.github.io/
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+Copyright (c) 2015 Dariel Noel
+
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
-
 Copyright (c) 2014 Daniel Eden
 */
 
@@ -22,28 +25,6 @@ Copyright (c) 2014 Daniel Eden
 .animated.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
-}
-
-@charset "UTF-8";
-
-/*!
-AniCollection - http://anicollection.github.io/
-Licensed under the MIT license - http://opensource.org/licenses/MIT
-
-Copyright (c) 2015 Dariel Noel
-*/
-
-/*global vars*/
-
-/*the total duration of the animation from start to the end.*/
-
-/*how many times it will iterate through animation.*/
-
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
 }
 
 .duration-xs {
@@ -181,6 +162,8 @@ or from end to start, or both.*/
   animation-direction: alternate-reverse;
 }
 
+/* animation-fill-mode: specifies which styles will be applied to the element when our animation is finished*/
+
 .fill-mode-none {
   -webkit-animation-fill-mode: none;
   animation-fill-mode: none;
@@ -204,7 +187,7 @@ or from end to start, or both.*/
 /*
  *@name bounce
  *@className bounce animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -214,62 +197,62 @@ or from end to start, or both.*/
  */
 
 @-webkit-keyframes bounce {
-  0%, 20%, 53%, 80%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+  0%, 100%, 20%, 53%, 80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   40%, 43% {
-    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
     -webkit-transform: translate3d(0, -30px, 0);
     transform: translate3d(0, -30px, 0);
   }
 
   70% {
-    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
     -webkit-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0);
   }
 
   90% {
-    -webkit-transform: translate3d(0,-4px,0);
-    transform: translate3d(0,-4px,0);
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
   }
 }
 
 @keyframes bounce {
-  0%, 20%, 53%, 80%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    -webkit-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+  0%, 100%, 20%, 53%, 80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   40%, 43% {
-    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
     -webkit-transform: translate3d(0, -30px, 0);
     -ms-transform: translate3d(0, -30px, 0);
     transform: translate3d(0, -30px, 0);
   }
 
   70% {
-    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+    transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
     -webkit-transform: translate3d(0, -15px, 0);
     -ms-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0);
   }
 
   90% {
-    -webkit-transform: translate3d(0,-4px,0);
-    -ms-transform: translate3d(0,-4px,0);
-    transform: translate3d(0,-4px,0);
+    -webkit-transform: translate3d(0, -4px, 0);
+    -ms-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
   }
 }
 
@@ -284,7 +267,7 @@ or from end to start, or both.*/
 /*
  *@name flash
  *@className flash animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -294,7 +277,7 @@ or from end to start, or both.*/
  */
 
 @-webkit-keyframes flash {
-  0%, 50%, 100% {
+  0%, 100%, 50% {
     opacity: 1;
   }
 
@@ -304,7 +287,7 @@ or from end to start, or both.*/
 }
 
 @keyframes flash {
-  0%, 50%, 100% {
+  0%, 100%, 50% {
     opacity: 1;
   }
 
@@ -321,7 +304,7 @@ or from end to start, or both.*/
 /*
  *@name pulse
  *@className pulse animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Nick Pettit
  *@source Glide
@@ -375,7 +358,7 @@ or from end to start, or both.*/
 /*
  *@name rubberBand
  *@className rubberBand animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -391,8 +374,8 @@ or from end to start, or both.*/
   }
 
   30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
+    -webkit-transform: scale3d(1.25, .75, 1);
+    transform: scale3d(1.25, .75, 1);
   }
 
   40% {
@@ -401,8 +384,8 @@ or from end to start, or both.*/
   }
 
   50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
+    -webkit-transform: scale3d(1.15, .85, 1);
+    transform: scale3d(1.15, .85, 1);
   }
 
   65% {
@@ -429,9 +412,9 @@ or from end to start, or both.*/
   }
 
   30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    -ms-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
+    -webkit-transform: scale3d(1.25, .75, 1);
+    -ms-transform: scale3d(1.25, .75, 1);
+    transform: scale3d(1.25, .75, 1);
   }
 
   40% {
@@ -441,9 +424,9 @@ or from end to start, or both.*/
   }
 
   50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    -ms-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
+    -webkit-transform: scale3d(1.15, .85, 1);
+    -ms-transform: scale3d(1.15, .85, 1);
+    transform: scale3d(1.15, .85, 1);
   }
 
   65% {
@@ -473,7 +456,7 @@ or from end to start, or both.*/
 /*
  *@name shake
  *@className shake animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -527,7 +510,7 @@ or from end to start, or both.*/
 /*
  *@name swing
  *@className swing animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -606,7 +589,7 @@ or from end to start, or both.*/
 /*
  *@name tada
  *@className tada animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -682,7 +665,7 @@ or from end to start, or both.*/
 /*
  *@name wobble
  *@className wobble animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Nick Pettit
  *@source Glide
@@ -780,7 +763,7 @@ or from end to start, or both.*/
 /*
  *@name bounceIn
  *@className bounceIn animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -790,9 +773,9 @@ or from end to start, or both.*/
  */
 
 @-webkit-keyframes bounceIn {
-  0%, 20%, 40%, 60%, 80%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  0%, 100%, 20%, 40%, 60%, 80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
   }
 
   0% {
@@ -830,9 +813,9 @@ or from end to start, or both.*/
 }
 
 @keyframes bounceIn {
-  0%, 20%, 40%, 60%, 80%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  0%, 100%, 20%, 40%, 60%, 80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
   }
 
   0% {
@@ -878,14 +861,12 @@ or from end to start, or both.*/
 .bounceIn {
   -webkit-animation-name: bounceIn;
   animation-name: bounceIn;
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s;
 }
 
 /*
  *@name bounceInDown
  *@className bounceInDown animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -895,9 +876,9 @@ or from end to start, or both.*/
  */
 
 @-webkit-keyframes bounceInDown {
-  0%, 60%, 75%, 90%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  0%, 100%, 60%, 75%, 90% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
   }
 
   0% {
@@ -929,9 +910,9 @@ or from end to start, or both.*/
 }
 
 @keyframes bounceInDown {
-  0%, 60%, 75%, 90%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  0%, 100%, 60%, 75%, 90% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
   }
 
   0% {
@@ -975,7 +956,7 @@ or from end to start, or both.*/
 /*
  *@name bounceInLeft
  *@className bounceInLeft animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -985,9 +966,9 @@ or from end to start, or both.*/
  */
 
 @-webkit-keyframes bounceInLeft {
-  0%, 60%, 75%, 90%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  0%, 100%, 60%, 75%, 90% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
   }
 
   0% {
@@ -1019,9 +1000,9 @@ or from end to start, or both.*/
 }
 
 @keyframes bounceInLeft {
-  0%, 60%, 75%, 90%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  0%, 100%, 60%, 75%, 90% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
   }
 
   0% {
@@ -1065,7 +1046,7 @@ or from end to start, or both.*/
 /*
  *@name bounceInRight
  *@className bounceInRight animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -1075,9 +1056,9 @@ or from end to start, or both.*/
  */
 
 @-webkit-keyframes bounceInRight {
-  0%, 60%, 75%, 90%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  0%, 100%, 60%, 75%, 90% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
   }
 
   0% {
@@ -1109,9 +1090,9 @@ or from end to start, or both.*/
 }
 
 @keyframes bounceInRight {
-  0%, 60%, 75%, 90%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  0%, 100%, 60%, 75%, 90% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
   }
 
   0% {
@@ -1155,7 +1136,7 @@ or from end to start, or both.*/
 /*
  *@name bounceInUp
  *@className bounceInUp animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -1165,9 +1146,9 @@ or from end to start, or both.*/
  */
 
 @-webkit-keyframes bounceInUp {
-  0%, 60%, 75%, 90%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  0%, 100%, 60%, 75%, 90% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
   }
 
   0% {
@@ -1199,9 +1180,9 @@ or from end to start, or both.*/
 }
 
 @keyframes bounceInUp {
-  0%, 60%, 75%, 90%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  0%, 100%, 60%, 75%, 90% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
   }
 
   0% {
@@ -1245,7 +1226,7 @@ or from end to start, or both.*/
 /*
  *@name bounceOut
  *@className bounceOut animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -1298,14 +1279,12 @@ or from end to start, or both.*/
 .bounceOut {
   -webkit-animation-name: bounceOut;
   animation-name: bounceOut;
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s;
 }
 
 /*
  *@name bounceOutDown
  *@className bounceOutDown animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -1363,7 +1342,7 @@ or from end to start, or both.*/
 /*
  *@name bounceOutLeft
  *@className bounceOutLeft animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -1410,7 +1389,7 @@ or from end to start, or both.*/
 /*
  *@name bounceOutRight
  *@className bounceOutRight animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -1457,7 +1436,7 @@ or from end to start, or both.*/
 /*
  *@name bounceOutUp
  *@className bounceOutUp animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -1515,7 +1494,7 @@ or from end to start, or both.*/
 /*
  *@name fadeIn
  *@className fadeIn animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -1552,7 +1531,7 @@ or from end to start, or both.*/
 /*
  *@name fadeInDown
  *@className fadeInDown animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -1599,7 +1578,7 @@ or from end to start, or both.*/
 /*
  *@name fadeInDownBig
  *@className fadeInDownBig animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -1646,7 +1625,7 @@ or from end to start, or both.*/
 /*
  *@name fadeInLeft
  *@className fadeInLeft animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -1693,7 +1672,7 @@ or from end to start, or both.*/
 /*
  *@name fadeInLeftBig
  *@className fadeInLeftBig animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -1740,7 +1719,7 @@ or from end to start, or both.*/
 /*
  *@name fadeInRight
  *@className fadeInRight animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -1787,7 +1766,7 @@ or from end to start, or both.*/
 /*
  *@name fadeInRightBig
  *@className fadeInRightBig animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -1834,7 +1813,7 @@ or from end to start, or both.*/
 /*
  *@name fadeInUp
  *@className fadeInUp animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -1881,7 +1860,7 @@ or from end to start, or both.*/
 /*
  *@name fadeInUpBig
  *@className fadeInUpBig animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -1928,7 +1907,7 @@ or from end to start, or both.*/
 /*
  *@name fadeOut
  *@className fadeOut animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -1965,7 +1944,7 @@ or from end to start, or both.*/
 /*
  *@name fadeOutDown
  *@className fadeOutDown animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -2007,7 +1986,7 @@ or from end to start, or both.*/
 /*
  *@name fadeOutDownBig
  *@className fadeOutDownBig animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -2049,7 +2028,7 @@ or from end to start, or both.*/
 /*
  *@name fadeOutLeft
  *@className fadeOutLeft animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -2091,7 +2070,7 @@ or from end to start, or both.*/
 /*
  *@name fadeOutLeftBig
  *@className fadeOutLeftBig animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -2133,7 +2112,7 @@ or from end to start, or both.*/
 /*
  *@name fadeOutRight
  *@className fadeOutRight animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -2175,7 +2154,7 @@ or from end to start, or both.*/
 /*
  *@name fadeOutRightBig
  *@className fadeOutRightBig animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -2217,7 +2196,7 @@ or from end to start, or both.*/
 /*
  *@name fadeOutUp
  *@className fadeOutUp animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -2259,7 +2238,7 @@ or from end to start, or both.*/
 /*
  *@name fadeOutUpBig
  *@className fadeOutUpBig animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -2301,7 +2280,7 @@ or from end to start, or both.*/
 /*
  *@name flip
  *@className flip animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -2400,7 +2379,7 @@ or from end to start, or both.*/
 /*
  *@name flipInX
  *@className flipInX animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -2481,9 +2460,9 @@ or from end to start, or both.*/
 }
 
 .flipInX {
-  -webkit-backface-visibility: visible !important;
-  -ms-backface-visibility: visible !important;
-  backface-visibility: visible !important;
+  -webkit-backface-visibility: visible!important;
+  -ms-backface-visibility: visible!important;
+  backface-visibility: visible!important;
   -webkit-animation-name: flipInX;
   animation-name: flipInX;
 }
@@ -2491,7 +2470,7 @@ or from end to start, or both.*/
 /*
  *@name flipInY
  *@className flipInY animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -2572,9 +2551,9 @@ or from end to start, or both.*/
 }
 
 .flipInY {
-  -webkit-backface-visibility: visible !important;
-  -ms-backface-visibility: visible !important;
-  backface-visibility: visible !important;
+  -webkit-backface-visibility: visible!important;
+  -ms-backface-visibility: visible!important;
+  backface-visibility: visible!important;
   -webkit-animation-name: flipInY;
   animation-name: flipInY;
 }
@@ -2582,7 +2561,7 @@ or from end to start, or both.*/
 /*
  *@name flipOutX
  *@className flipOutX animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -2635,17 +2614,15 @@ or from end to start, or both.*/
 .flipOutX {
   -webkit-animation-name: flipOutX;
   animation-name: flipOutX;
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s;
-  -webkit-backface-visibility: visible !important;
-  -ms-backface-visibility: visible !important;
-  backface-visibility: visible !important;
+  -webkit-backface-visibility: visible!important;
+  -ms-backface-visibility: visible!important;
+  backface-visibility: visible!important;
 }
 
 /*
  *@name flipOutY
  *@className flipOutY animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -2696,19 +2673,17 @@ or from end to start, or both.*/
 }
 
 .flipOutY {
-  -webkit-backface-visibility: visible !important;
-  -ms-backface-visibility: visible !important;
-  backface-visibility: visible !important;
+  -webkit-backface-visibility: visible!important;
+  -ms-backface-visibility: visible!important;
+  backface-visibility: visible!important;
   -webkit-animation-name: flipOutY;
   animation-name: flipOutY;
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s;
 }
 
 /*
  *@name lightSpeedIn
  *@className lightSpeedIn animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -2783,7 +2758,7 @@ or from end to start, or both.*/
 /*
  *@name lightSpeedOut
  *@className lightSpeedOut animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -3092,7 +3067,7 @@ or from end to start, or both.*/
 /*
  *@name rotateIn
  *@className rotateIn animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -3149,7 +3124,7 @@ or from end to start, or both.*/
 /*
  *@name rotateInDownLeft
  *@className rotateInDownLeft animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -3206,7 +3181,7 @@ or from end to start, or both.*/
 /*
  *@name rotateInDownRight
  *@className rotateInDownRight animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -3263,7 +3238,7 @@ or from end to start, or both.*/
 /*
  *@name rotateInUpLeft
  *@className rotateInUpLeft animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -3320,7 +3295,7 @@ or from end to start, or both.*/
 /*
  *@name rotateInUpRight
  *@className rotateInUpRight animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -3377,7 +3352,7 @@ or from end to start, or both.*/
 /*
  *@name rotateOut
  *@className rotateOut animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -3429,7 +3404,7 @@ or from end to start, or both.*/
 /*
  *@name rotateOutDownLeft
  *@className rotateOutDownLeft animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -3481,7 +3456,7 @@ or from end to start, or both.*/
 /*
  *@name rotateOutDownRight
  *@className rotateOutDownRight animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -3533,7 +3508,7 @@ or from end to start, or both.*/
 /*
  *@name rotateOutUpLeft
  *@className rotateOutUpLeft animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -3585,7 +3560,7 @@ or from end to start, or both.*/
 /*
  *@name rotateOutUpRight
  *@className rotateOutUpRight animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -3637,7 +3612,7 @@ or from end to start, or both.*/
 /*
  *@name hinge
  *@className hinge animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -3728,7 +3703,7 @@ or from end to start, or both.*/
 /*
  *@name rollIn
  *@className rollIn animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Nick Pettit
  *@source Glide
@@ -3775,7 +3750,7 @@ or from end to start, or both.*/
 /*
  *@name rollOut
  *@className rollOut animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Nick Pettit
  *@source Glide
@@ -3817,7 +3792,7 @@ or from end to start, or both.*/
 /*
  *@name zoomIn
  *@className zoomIn animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -3859,7 +3834,7 @@ or from end to start, or both.*/
 /*
  *@name zoomInDown
  *@className zoomInDown animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -3873,16 +3848,16 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
     transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
   60% {
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
   }
 }
 
@@ -3892,8 +3867,8 @@ or from end to start, or both.*/
     -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
     -ms-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
     transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
   60% {
@@ -3901,8 +3876,8 @@ or from end to start, or both.*/
     -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     -ms-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
   }
 }
 
@@ -3914,7 +3889,7 @@ or from end to start, or both.*/
 /*
  *@name zoomInLeft
  *@className zoomInLeft animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -3928,16 +3903,16 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
     transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
   60% {
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
     transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
   }
 }
 
@@ -3947,8 +3922,8 @@ or from end to start, or both.*/
     -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
     -ms-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
     transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
   60% {
@@ -3956,8 +3931,8 @@ or from end to start, or both.*/
     -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
     -ms-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
     transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
   }
 }
 
@@ -3969,7 +3944,7 @@ or from end to start, or both.*/
 /*
  *@name zoomInRight
  *@className zoomInRight animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -3983,16 +3958,16 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
     transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
   60% {
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
     transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
   }
 }
 
@@ -4002,8 +3977,8 @@ or from end to start, or both.*/
     -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
     -ms-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
     transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
   60% {
@@ -4011,8 +3986,8 @@ or from end to start, or both.*/
     -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
     -ms-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
     transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
   }
 }
 
@@ -4024,7 +3999,7 @@ or from end to start, or both.*/
 /*
  *@name zoomInUp
  *@className zoomInUp animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -4038,16 +4013,16 @@ or from end to start, or both.*/
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
     transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
   60% {
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
   }
 }
 
@@ -4057,8 +4032,8 @@ or from end to start, or both.*/
     -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
     -ms-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
     transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
   60% {
@@ -4066,8 +4041,8 @@ or from end to start, or both.*/
     -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     -ms-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
   }
 }
 
@@ -4079,7 +4054,7 @@ or from end to start, or both.*/
 /*
  *@name zoomOut
  *@className zoomOut animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -4129,7 +4104,7 @@ or from end to start, or both.*/
 /*
  *@name zoomOutDown
  *@className zoomOutDown animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -4143,8 +4118,8 @@ or from end to start, or both.*/
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
   100% {
@@ -4153,8 +4128,8 @@ or from end to start, or both.*/
     transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
   }
 }
 
@@ -4164,8 +4139,8 @@ or from end to start, or both.*/
     -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     -ms-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
   100% {
@@ -4176,8 +4151,8 @@ or from end to start, or both.*/
     -webkit-transform-origin: center bottom;
     -ms-transform-origin: center bottom;
     transform-origin: center bottom;
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
   }
 }
 
@@ -4189,7 +4164,7 @@ or from end to start, or both.*/
 /*
  *@name zoomOutLeft
  *@className zoomOutLeft animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -4241,7 +4216,7 @@ or from end to start, or both.*/
 /*
  *@name zoomOutRight
  *@className zoomOutRight animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -4293,7 +4268,7 @@ or from end to start, or both.*/
 /*
  *@name zoomOutUp
  *@className zoomOutUp animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -4307,8 +4282,8 @@ or from end to start, or both.*/
     opacity: 1;
     -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
   100% {
@@ -4317,8 +4292,8 @@ or from end to start, or both.*/
     transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
   }
 }
 
@@ -4328,8 +4303,8 @@ or from end to start, or both.*/
     -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     -ms-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
   }
 
   100% {
@@ -4340,8 +4315,8 @@ or from end to start, or both.*/
     -webkit-transform-origin: center bottom;
     -ms-transform-origin: center bottom;
     transform-origin: center bottom;
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
   }
 }
 
@@ -4353,7 +4328,7 @@ or from end to start, or both.*/
 /*
  *@name slideInDown
  *@className slideInDown animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -4364,29 +4339,29 @@ or from end to start, or both.*/
 
 @-webkit-keyframes slideInDown {
   0% {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
     visibility: visible;
   }
 
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes slideInDown {
   0% {
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    transform: translateY(-100%);
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
     visibility: visible;
   }
 
   100% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -4398,7 +4373,7 @@ or from end to start, or both.*/
 /*
  *@name slideInLeft
  *@className slideInLeft animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -4409,29 +4384,29 @@ or from end to start, or both.*/
 
 @-webkit-keyframes slideInLeft {
   0% {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
     visibility: visible;
   }
 
   100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes slideInLeft {
   0% {
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
     visibility: visible;
   }
 
   100% {
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -4443,7 +4418,7 @@ or from end to start, or both.*/
 /*
  *@name slideInRight
  *@className slideInRight animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -4454,29 +4429,29 @@ or from end to start, or both.*/
 
 @-webkit-keyframes slideInRight {
   0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
     visibility: visible;
   }
 
   100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes slideInRight {
   0% {
-    -webkit-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    transform: translateX(100%);
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
     visibility: visible;
   }
 
   100% {
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -4488,7 +4463,7 @@ or from end to start, or both.*/
 /*
  *@name slideInUp
  *@className slideInUp animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -4499,29 +4474,29 @@ or from end to start, or both.*/
 
 @-webkit-keyframes slideInUp {
   0% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
     visibility: visible;
   }
 
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes slideInUp {
   0% {
-    -webkit-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    transform: translateY(100%);
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
     visibility: visible;
   }
 
   100% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -4533,7 +4508,7 @@ or from end to start, or both.*/
 /*
  *@name slideOutDown
  *@className slideOutDown animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -4544,29 +4519,29 @@ or from end to start, or both.*/
 
 @-webkit-keyframes slideOutDown {
   0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   100% {
     visibility: hidden;
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
   }
 }
 
 @keyframes slideOutDown {
   0% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   100% {
     visibility: hidden;
-    -webkit-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    transform: translateY(100%);
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
   }
 }
 
@@ -4578,7 +4553,7 @@ or from end to start, or both.*/
 /*
  *@name slideOutLeft
  *@className slideOutLeft animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -4589,29 +4564,29 @@ or from end to start, or both.*/
 
 @-webkit-keyframes slideOutLeft {
   0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   100% {
     visibility: hidden;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 }
 
 @keyframes slideOutLeft {
   0% {
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   100% {
     visibility: hidden;
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 }
 
@@ -4623,7 +4598,7 @@ or from end to start, or both.*/
 /*
  *@name slideOutRight
  *@className slideOutRight animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -4634,29 +4609,29 @@ or from end to start, or both.*/
 
 @-webkit-keyframes slideOutRight {
   0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   100% {
     visibility: hidden;
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
 }
 
 @keyframes slideOutRight {
   0% {
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   100% {
     visibility: hidden;
-    -webkit-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    transform: translateX(100%);
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
 }
 
@@ -4668,7 +4643,7 @@ or from end to start, or both.*/
 /*
  *@name slideOutUp
  *@className slideOutUp animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -4679,29 +4654,29 @@ or from end to start, or both.*/
 
 @-webkit-keyframes slideOutUp {
   0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   100% {
     visibility: hidden;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
   }
 }
 
 @keyframes slideOutUp {
   0% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   100% {
     visibility: hidden;
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    transform: translateY(-100%);
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
   }
 }
 

@@ -1,7 +1,7 @@
 /*
  *@name rotateInDownLeft
  *@className rotateInDownLeft animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -13,16 +13,15 @@
   0% {
     transform-origin: left bottom;
     transform: rotate3d(0, 0, 1, -45deg);
-    opacity: 0;
+    opacity: 0
   }
-
   100% {
     transform-origin: left bottom;
     transform: none;
-    opacity: 1;
+    opacity: 1
   }
 }
 
 .rotateInDownLeft {
-  animation-name: rotateInDownLeft;
+  animation-name: rotateInDownLeft
 }

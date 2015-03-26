@@ -1,0 +1,12 @@
+{
+    "name": "bounceOut",
+    "className": "bounceOut animated",
+    "cssCode": "@-webkit-keyframes bounceOut {\n  20% {\n    -webkit-transform: scale3d(.9, .9, .9);\n    transform: scale3d(.9, .9, .9)\n  }\n  50%,\n  55% {\n    opacity: 1;\n    -webkit-transform: scale3d(1.1, 1.1, 1.1);\n    transform: scale3d(1.1, 1.1, 1.1)\n  }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale3d(.3, .3, .3);\n    transform: scale3d(.3, .3, .3)\n  }\n}\n\n@keyframes bounceOut {\n  20% {\n    -webkit-transform: scale3d(.9, .9, .9);\n    -ms-transform: scale3d(.9, .9, .9);\n    transform: scale3d(.9, .9, .9)\n  }\n  50%,\n  55% {\n    opacity: 1;\n    -webkit-transform: scale3d(1.1, 1.1, 1.1);\n    -ms-transform: scale3d(1.1, 1.1, 1.1);\n    transform: scale3d(1.1, 1.1, 1.1)\n  }\n  100% {\n    opacity: 0;\n    -webkit-transform: scale3d(.3, .3, .3);\n    -ms-transform: scale3d(.3, .3, .3);\n    transform: scale3d(.3, .3, .3)\n  }\n}\n\n.bounceOut {\n  -webkit-animation-name: bounceOut;\n  animation-name: bounceOut\n}",
+    "editionLink": "codepen.io",
+    "author": "Dan Eden",
+    "source": "Animate.css",
+    "sourceUrl": "http://daneden.github.io/animate.css/",
+    "issues": "https://github.com/daneden/animate.css/issues",
+    "license": "MIT",
+    "plainCssCode": "@keyframes bounceOut {\n  20% {\n    transform: scale3d(.9, .9, .9)\n  }\n  50%,\n  55% {\n    opacity: 1;\n    transform: scale3d(1.1, 1.1, 1.1)\n  }\n  100% {\n    opacity: 0;\n    transform: scale3d(.3, .3, .3)\n  }\n}\n\n.bounceOut {\n  animation-name: bounceOut\n}"
+}

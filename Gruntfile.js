@@ -32,9 +32,12 @@ module.exports = function(grunt) {
     },
 
     cssmin: {
+      options: {
+        keepSpecialComments: 0
+      },
       minify: {
         src: ['dist/anicollection.css'],
-        dest: 'dist/anicollection.min.css',
+        dest: 'dist/anicollection.min.css'
       }
     },
 
@@ -79,7 +82,6 @@ module.exports = function(grunt) {
     var categories = grunt.file.readJSON('config/grunt/available-animations.json'),
       category, files, file,
       target = [
-                'libraries/animate.css/source/_base.css',
                 'libraries/anicollection/source/_base.css'
                ],
       count = 0;

@@ -1,7 +1,7 @@
 /*
  *@name fadeInRightBig
  *@className fadeInRightBig animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -12,15 +12,14 @@
 @keyframes fadeInRightBig {
   0% {
     opacity: 0;
-    transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0)
   }
-
   100% {
     opacity: 1;
-    transform: none;
+    transform: none
   }
 }
 
 .fadeInRightBig {
-  animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig
 }

@@ -1,7 +1,7 @@
 /*
  *@name fadeOutUpBig
  *@className fadeOutUpBig animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -11,15 +11,14 @@
  */
 @keyframes fadeOutUpBig {
   0% {
-    opacity: 1;
+    opacity: 1
   }
-
   100% {
     opacity: 0;
-    transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0)
   }
 }
 
 .fadeOutUpBig {
-  animation-name: fadeOutUpBig;
+  animation-name: fadeOutUpBig
 }

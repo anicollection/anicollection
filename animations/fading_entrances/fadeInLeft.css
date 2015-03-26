@@ -1,7 +1,7 @@
 /*
  *@name fadeInLeft
  *@className fadeInLeft animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -12,15 +12,14 @@
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0)
   }
-
   100% {
     opacity: 1;
-    transform: none;
+    transform: none
   }
 }
 
 .fadeInLeft {
-  animation-name: fadeInLeft;
+  animation-name: fadeInLeft
 }

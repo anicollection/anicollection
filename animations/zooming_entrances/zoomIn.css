@@ -1,7 +1,7 @@
 /*
  *@name zoomIn
  *@className zoomIn animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -12,14 +12,13 @@
 @keyframes zoomIn {
   0% {
     opacity: 0;
-    transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3)
   }
-
   50% {
-    opacity: 1;
+    opacity: 1
   }
 }
 
 .zoomIn {
-  animation-name: zoomIn;
+  animation-name: zoomIn
 }

@@ -1,7 +1,7 @@
 /*
  *@name rotateOut
  *@className rotateOut animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -12,16 +12,15 @@
 @keyframes rotateOut {
   0% {
     transform-origin: center;
-    opacity: 1;
+    opacity: 1
   }
-
   100% {
     transform-origin: center;
     transform: rotate3d(0, 0, 1, 200deg);
-    opacity: 0;
+    opacity: 0
   }
 }
 
 .rotateOut {
-  animation-name: rotateOut;
+  animation-name: rotateOut
 }

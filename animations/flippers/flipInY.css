@@ -1,7 +1,7 @@
 /*
  *@name flipInY
  *@className flipInY animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -13,29 +13,25 @@
   0% {
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
     transition-timing-function: ease-in;
-    opacity: 0;
+    opacity: 0
   }
-
   40% {
     transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
-    transition-timing-function: ease-in;
+    transition-timing-function: ease-in
   }
-
   60% {
     transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
-    opacity: 1;
+    opacity: 1
   }
-
   80% {
-    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg)
   }
-
   100% {
-    transform: perspective(400px);
+    transform: perspective(400px)
   }
 }
 
 .flipInY {
-  backface-visibility: visible !important;
-  animation-name: flipInY;
+  backface-visibility: visible!important;
+  animation-name: flipInY
 }

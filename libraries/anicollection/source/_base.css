@@ -2,15 +2,21 @@
 /*!
 AniCollection - http://anicollection.github.io/
 Licensed under the MIT license - http://opensource.org/licenses/MIT
-
 Copyright (c) 2015 Dariel Noel
+
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+Copyright (c) 2014 Daniel Eden
 */
-/*global vars*/
-/*the total duration of the animation from start to the end.*/
-/*how many times it will iterate through animation.*/
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
+}
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+.animated.hinge {
+  animation-duration: 2s;
 }
 .duration-xs {
   animation-duration: 0.25s;
@@ -93,6 +99,7 @@ or from end to start, or both.*/
 .direction-alternate-reverse {
   animation-direction: alternate-reverse;
 }
+/* animation-fill-mode: specifies which styles will be applied to the element when our animation is finished*/
 .fill-mode-none {
   animation-fill-mode: none;
 }

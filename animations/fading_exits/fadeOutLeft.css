@@ -1,7 +1,7 @@
 /*
  *@name fadeOutLeft
  *@className fadeOutLeft animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -11,15 +11,14 @@
  */
 @keyframes fadeOutLeft {
   0% {
-    opacity: 1;
+    opacity: 1
   }
-
   100% {
     opacity: 0;
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0)
   }
 }
 
 .fadeOutLeft {
-  animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft
 }

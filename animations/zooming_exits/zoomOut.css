@@ -1,7 +1,7 @@
 /*
  *@name zoomOut
  *@className zoomOut animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -11,19 +11,17 @@
  */
 @keyframes zoomOut {
   0% {
-    opacity: 1;
+    opacity: 1
   }
-
   50% {
     opacity: 0;
-    transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3)
   }
-
   100% {
-    opacity: 0;
+    opacity: 0
   }
 }
 
 .zoomOut {
-  animation-name: zoomOut;
+  animation-name: zoomOut
 }

@@ -2,13 +2,16 @@
 /*!
 AniCollection - http://anicollection.github.io/
 Licensed under the MIT license - http://opensource.org/licenses/MIT
-
 Copyright (c) 2015 Dariel Noel
+
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+Copyright (c) 2014 Daniel Eden
 */
 
-/*global vars*/
+// global vars
 
-/*the total duration of the animation from start to the end.*/
+// the total duration of the animation from start to the end.*/
 @base-animation-duration: 1s;
 
 // sets the animation speed ( linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier )
@@ -17,7 +20,7 @@ Copyright (c) 2015 Dariel Noel
 // animation-delay: the delay before our animation will start.
 @base-animation-delay: 1s;
 
-/*how many times it will iterate through animation.*/
+// how many times it will iterate through animation.
 @base-animation-iteration-count: 1;
 
 @base-animation-fill-mode: both;
@@ -26,6 +29,14 @@ Copyright (c) 2015 Dariel Noel
 .animated {
   animation-duration: @base-animation-duration;
   animation-fill-mode: @base-animation-fill-mode;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  animation-duration: 2s;
 }
 
 .duration-xs{
@@ -138,7 +149,7 @@ or from end to start, or both.*/
   animation-direction: alternate-reverse;
 }
 
-// animation-fill-mode: specifies which styles will be applied to the element when our animation is finished
+/* animation-fill-mode: specifies which styles will be applied to the element when our animation is finished*/
 
 .fill-mode-none{
   animation-fill-mode: none;

@@ -96,7 +96,7 @@ module.exports = function (grunt) {
     var animation,
         inputFilepath = config.src + categoryName + '/' + fileName + '.css',
         inputPlainFilepath = config.unprefixedSrc + categoryName + '/' + fileName + '.css',
-        outpuFilepath = config.dest + 'db_'+ fileName + '.json',
+        outpuFilepath = config.dest + categoryName + '/' + 'db_'+ fileName + '.json',
         currentFileSource,
         currentFilePlainSource,
         metadataObject;

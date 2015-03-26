@@ -1,7 +1,7 @@
 /*
  *@name slideOutUp
  *@className slideOutUp animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -11,15 +11,14 @@
  */
 @keyframes slideOutUp {
   0% {
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0)
   }
-
   100% {
     visibility: hidden;
-    transform: translateY(-100%);
+    transform: translate3d(0, -100%, 0)
   }
 }
 
 .slideOutUp {
-  animation-name: slideOutUp;
+  animation-name: slideOutUp
 }

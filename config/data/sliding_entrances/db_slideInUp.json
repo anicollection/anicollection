@@ -1,0 +1,12 @@
+{
+    "name": "slideInUp",
+    "className": "slideInUp animated",
+    "cssCode": "@-webkit-keyframes slideInUp {\n  0% {\n    -webkit-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0);\n    visibility: visible\n  }\n  100% {\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0)\n  }\n}\n\n@keyframes slideInUp {\n  0% {\n    -webkit-transform: translate3d(0, 100%, 0);\n    -ms-transform: translate3d(0, 100%, 0);\n    transform: translate3d(0, 100%, 0);\n    visibility: visible\n  }\n  100% {\n    -webkit-transform: translate3d(0, 0, 0);\n    -ms-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0)\n  }\n}\n\n.slideInUp {\n  -webkit-animation-name: slideInUp;\n  animation-name: slideInUp\n}",
+    "editionLink": "codepen.io",
+    "author": "Dan Eden",
+    "source": "Animate.css",
+    "sourceUrl": "http://daneden.github.io/animate.css/",
+    "issues": "https://github.com/daneden/animate.css/issues",
+    "license": "MIT",
+    "plainCssCode": "@keyframes slideInUp {\n  0% {\n    transform: translate3d(0, 100%, 0);\n    visibility: visible\n  }\n  100% {\n    transform: translate3d(0, 0, 0)\n  }\n}\n\n.slideInUp {\n  animation-name: slideInUp\n}"
+}

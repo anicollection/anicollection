@@ -1,7 +1,7 @@
 /*
  *@name fadeIn
  *@className fadeIn animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -10,10 +10,14 @@
  *@license MIT
  */
 @keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
 }
 
 .fadeIn {
-  animation-name: fadeIn;
+  animation-name: fadeIn
 }

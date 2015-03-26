@@ -1,7 +1,7 @@
 /*
  *@name fadeInUp
  *@className fadeInUp animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -12,15 +12,14 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0)
   }
-
   100% {
     opacity: 1;
-    transform: none;
+    transform: none
   }
 }
 
 .fadeInUp {
-  animation-name: fadeInUp;
+  animation-name: fadeInUp
 }

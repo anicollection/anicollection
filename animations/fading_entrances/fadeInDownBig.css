@@ -1,7 +1,7 @@
 /*
  *@name fadeInDownBig
  *@className fadeInDownBig animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -12,15 +12,14 @@
 @keyframes fadeInDownBig {
   0% {
     opacity: 0;
-    transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0)
   }
-
   100% {
     opacity: 1;
-    transform: none;
+    transform: none
   }
 }
 
 .fadeInDownBig {
-  animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig
 }

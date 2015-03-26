@@ -1,7 +1,7 @@
 /*
  *@name fadeOut
  *@className fadeOut animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -10,10 +10,14 @@
  *@license MIT
  */
 @keyframes fadeOut {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0
+  }
 }
 
 .fadeOut {
-  animation-name: fadeOut;
+  animation-name: fadeOut
 }

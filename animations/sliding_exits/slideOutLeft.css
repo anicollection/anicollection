@@ -1,7 +1,7 @@
 /*
  *@name slideOutLeft
  *@className slideOutLeft animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -11,15 +11,14 @@
  */
 @keyframes slideOutLeft {
   0% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0)
   }
-
   100% {
     visibility: hidden;
-    transform: translateX(-100%);
+    transform: translate3d(-100%, 0, 0)
   }
 }
 
 .slideOutLeft {
-  animation-name: slideOutLeft;
+  animation-name: slideOutLeft
 }

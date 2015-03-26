@@ -1,7 +1,7 @@
 /*
  *@name flash
  *@className flash animated
- *@cssCode
+ *@cssCode true
  *@editionLink codepen.io
  *@author Dan Eden
  *@source Animate.css
@@ -10,15 +10,15 @@
  *@license MIT
  */
 @keyframes flash {
-  0%, 50%, 100% {
-    opacity: 1;
+  0%, 100%, 50% {
+    opacity: 1
   }
-
-  25%, 75% {
-    opacity: 0;
+  25%,
+  75% {
+    opacity: 0
   }
 }
 
 .flash {
-  animation-name: flash;
+  animation-name: flash
 }
