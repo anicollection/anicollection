@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/*!
+AniCollection - http://anicollection.github.io/
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2015 Dariel Noel
+*/
+
+/*global vars*/
+
+/*the total duration of the animation from start to the end.*/
+@base-animation-duration: 1s;
+
+// sets the animation speed ( linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier )
+@base-animation-timing-function: linear;
+
+// animation-delay: the delay before our animation will start.
+@base-animation-delay: 1s;
+
+/*how many times it will iterate through animation.*/
+@base-animation-iteration-count: 1;
+
+@base-animation-fill-mode: both;
+
+
+.animated {
+  animation-duration: @base-animation-duration;
+  animation-fill-mode: @base-animation-fill-mode;
+}
+
+.duration-xs{
+  animation-duration: @base-animation-duration/4;
+}
+
+.duration-sm{
+  animation-duration: @base-animation-duration/2;
+}
+
+.duration-md{
+  animation-duration: @base-animation-duration;
+}
+
+.duration-lg{
+  animation-duration: @base-animation-duration*2;
+}
+
+.duration-xl{
+  animation-duration: @base-animation-duration*4;
+}
+
+/*animation-timing-function: sets the animation speed
+( linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier ).*/
+
+.timing-linear{
+  animation-timing-function: linear;
+}
+
+.timing-ease-in{
+  animation-timing-function: ease-in;
+}
+
+.timing-ease-out{
+  animation-timing-function: ease-out;
+}
+
+.timing-ease-in-out{
+  animation-timing-function: ease-in-out;
+}
+
+.timing-cubic-bezier{
+  animation-timing-function: cubic-bezier;
+}
+
+/*animation-delay: the delay before our animation will start.*/
+
+.delay-xs{
+  animation-delay: @base-animation-delay/4;
+}
+
+.delay-sm{
+  animation-delay: @base-animation-delay/2;
+}
+
+.delay-md{
+  animation-delay: @base-animation-delay;
+}
+
+.delay-lg{
+  animation-delay: @base-animation-delay*2;
+}
+
+.delay-xl{
+  animation-delay: @base-animation-delay*4;
+}
+
+/*how many times it will iterate through animation.*/
+
+.iteration-infinite{
+  animation-iteration-count: infinite;
+}
+
+.iteration-1{
+  animation-iteration-count: @base-animation-iteration-count;
+}
+
+.iteration-2{
+  animation-iteration-count: @base-animation-iteration-count*2;
+}
+
+.iteration-3{
+  animation-iteration-count: @base-animation-iteration-count*3;
+}
+
+.iteration-4{
+  animation-iteration-count: @base-animation-iteration-count*2;
+}
+
+.iteration-5{
+  animation-iteration-count: @base-animation-iteration-count*4;
+}
+
+/* animation-direction: gives you the ability to change the loop direction, from start to end ,
+or from end to start, or both.*/
+
+.direction-normal{
+  animation-direction: normal;
+}
+
+.direction-reverse{
+  animation-direction: reverse;
+}
+
+.direction-alternate{
+  animation-direction: alternate;
+}
+
+.direction-alternate-reverse{
+  animation-direction: alternate-reverse;
+}
+
+// animation-fill-mode: specifies which styles will be applied to the element when our animation is finished
+
+.fill-mode-none{
+  animation-fill-mode: none;
+}
+
+.fill-mode-forwards{
+  animation-fill-mode: forwards;
+}
+
+.fill-mode-backwards{
+  animation-fill-mode: backwards;
+}
+
+.fill-mode-both{
+  animation-fill-mode: both;
+}

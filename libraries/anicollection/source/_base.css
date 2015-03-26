@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/*!
+AniCollection - http://anicollection.github.io/
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2015 Dariel Noel
+*/
+/*global vars*/
+/*the total duration of the animation from start to the end.*/
+/*how many times it will iterate through animation.*/
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.duration-xs {
+  animation-duration: 0.25s;
+}
+.duration-sm {
+  animation-duration: 0.5s;
+}
+.duration-md {
+  animation-duration: 1s;
+}
+.duration-lg {
+  animation-duration: 2s;
+}
+.duration-xl {
+  animation-duration: 4s;
+}
+/*animation-timing-function: sets the animation speed
+( linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier ).*/
+.timing-linear {
+  animation-timing-function: linear;
+}
+.timing-ease-in {
+  animation-timing-function: ease-in;
+}
+.timing-ease-out {
+  animation-timing-function: ease-out;
+}
+.timing-ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+.timing-cubic-bezier {
+  animation-timing-function: cubic-bezier;
+}
+/*animation-delay: the delay before our animation will start.*/
+.delay-xs {
+  animation-delay: 0.25s;
+}
+.delay-sm {
+  animation-delay: 0.5s;
+}
+.delay-md {
+  animation-delay: 1s;
+}
+.delay-lg {
+  animation-delay: 2s;
+}
+.delay-xl {
+  animation-delay: 4s;
+}
+/*how many times it will iterate through animation.*/
+.iteration-infinite {
+  animation-iteration-count: infinite;
+}
+.iteration-1 {
+  animation-iteration-count: 1;
+}
+.iteration-2 {
+  animation-iteration-count: 2;
+}
+.iteration-3 {
+  animation-iteration-count: 3;
+}
+.iteration-4 {
+  animation-iteration-count: 2;
+}
+.iteration-5 {
+  animation-iteration-count: 4;
+}
+/* animation-direction: gives you the ability to change the loop direction, from start to end ,
+or from end to start, or both.*/
+.direction-normal {
+  animation-direction: normal;
+}
+.direction-reverse {
+  animation-direction: reverse;
+}
+.direction-alternate {
+  animation-direction: alternate;
+}
+.direction-alternate-reverse {
+  animation-direction: alternate-reverse;
+}
+.fill-mode-none {
+  animation-fill-mode: none;
+}
+.fill-mode-forwards {
+  animation-fill-mode: forwards;
+}
+.fill-mode-backwards {
+  animation-fill-mode: backwards;
+}
+.fill-mode-both {
+  animation-fill-mode: both;
+}

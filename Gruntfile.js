@@ -78,7 +78,10 @@ module.exports = function(grunt) {
 
     var categories = grunt.file.readJSON('config/grunt/available-animations.json'),
       category, files, file,
-      target = [ 'libraries/animate.css/source/_base.css' ],
+      target = [
+                'libraries/animate.css/source/_base.css',
+                'libraries/anicollection/source/_base.css'
+               ],
       count = 0;
 
     for ( category in categories ) {
@@ -111,10 +114,9 @@ module.exports = function(grunt) {
 
   // register task
   grunt.registerTask('concat-anim', 'Concatenates activated animations', concatAnim); // custom task
-  grunt.registerTask('default', ['concat-anim', 'autoprefixer', 'cssmin']);
+  grunt.registerTask('default', ['less', 'concat-anim', 'autoprefixer', 'cssmin']);
   grunt.registerTask('dev', ['watch']);
 
   // allow you to generate the animation db for anicollection
   grunt.registerTask('generate', ['default','autoprefixer', 'generate-db', 'clean', 'copy']);
-
 };

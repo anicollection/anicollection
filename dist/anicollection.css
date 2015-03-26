@@ -24,6 +24,183 @@ Copyright (c) 2014 Daniel Eden
   animation-duration: 2s;
 }
 
+@charset "UTF-8";
+
+/*!
+AniCollection - http://anicollection.github.io/
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2015 Dariel Noel
+*/
+
+/*global vars*/
+
+/*the total duration of the animation from start to the end.*/
+
+/*how many times it will iterate through animation.*/
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.duration-xs {
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+}
+
+.duration-sm {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+.duration-md {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.duration-lg {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.duration-xl {
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+/*animation-timing-function: sets the animation speed
+( linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier ).*/
+
+.timing-linear {
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.timing-ease-in {
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}
+
+.timing-ease-out {
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+.timing-ease-in-out {
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.timing-cubic-bezier {
+  -webkit-animation-timing-function: cubic-bezier;
+  animation-timing-function: cubic-bezier;
+}
+
+/*animation-delay: the delay before our animation will start.*/
+
+.delay-xs {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
+.delay-sm {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.delay-md {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.delay-lg {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.delay-xl {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+/*how many times it will iterate through animation.*/
+
+.iteration-infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.iteration-1 {
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.iteration-2 {
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+}
+
+.iteration-3 {
+  -webkit-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+}
+
+.iteration-4 {
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+}
+
+.iteration-5 {
+  -webkit-animation-iteration-count: 4;
+  animation-iteration-count: 4;
+}
+
+/* animation-direction: gives you the ability to change the loop direction, from start to end ,
+or from end to start, or both.*/
+
+.direction-normal {
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+
+.direction-reverse {
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+
+.direction-alternate {
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.direction-alternate-reverse {
+  -webkit-animation-direction: alternate-reverse;
+  animation-direction: alternate-reverse;
+}
+
+.fill-mode-none {
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+}
+
+.fill-mode-forwards {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.fill-mode-backwards {
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+.fill-mode-both {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
 /*
  *@name bounce
  *@className bounce animated
